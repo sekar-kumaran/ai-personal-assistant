@@ -9,7 +9,7 @@ This repository is a public showcase version. Advanced production modules remain
 ## Why This Project Matters
 
 - Demonstrates real AI assistant workflows, not toy prompts
-- Shows startup-ready shipping ability: API + dashboard + Docker + CI
+- Shows production-ready shipping ability: API + dashboard + Docker + CI
 - Includes observability, test coverage, and optional auth hardening
 - Supports polyglot adaptability with Python backend and Node.js client
 
@@ -215,7 +215,7 @@ Add these screenshots under `assets/screenshots/`:
 
 ## Recruiter Talking Points
 
-- Designed for startup speed: modular features shipped with clear boundaries
+- Designed for local pc: modular features shipped with clear boundaries
 - Practical AI stack: intent routing, tool orchestration, provider abstraction
 - Production signals: Docker, CI, observability, optional auth
 - Polyglot adaptability: Node.js client consuming Python API
