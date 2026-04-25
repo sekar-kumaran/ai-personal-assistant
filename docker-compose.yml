@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  showcase-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: showcase-api
+    ports:
+      - "8001:8001"
+    environment:
+      SHOWCASE_ENV: "prod"
+      SHOWCASE_HOST: "0.0.0.0"
+      SHOWCASE_PORT: "8001"
+      SHOWCASE_LOG_LEVEL: "INFO"
+      SHOWCASE_DEBUG: "false"
+      SHOWCASE_LLM_PROVIDER: "mock"
+      SHOWCASE_LLM_MODEL: "mock-mini"
+      SHOWCASE_ENABLE_VOICE_MOCK: "true"
+      SHOWCASE_FRONTEND_ENABLED: "true"
+      SHOWCASE_API_TOKEN: ""
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: unless-stopped

@@ -1,0 +1,9 @@
+# Optional voice dependencies (install only if you need real STT/TTS)
+# Whisper STT
+openai-whisper>=20240930
+
+# Edge TTS
+edge-tts>=6.1.12
+
+# Coqui TTS
+coqui-tts>=0.26.2

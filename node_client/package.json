@@ -1,0 +1,15 @@
+{
+  "name": "showcase-node-client",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Node.js integration signal for the public showcase assistant",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "chat": "node src/index.mjs chat \"Add a task: prepare startup interview\"",
+    "reminder": "node src/index.mjs reminder \"Review my applications\" 20"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
